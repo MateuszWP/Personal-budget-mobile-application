@@ -33,3 +33,11 @@ nav a:hover {
 #form .btn {
 	width: 100%;
 }
+
+#incomes {
+	background-color: #86db93;
+}
+
+#expenses {
+	background-color: #f2be11;
+}
