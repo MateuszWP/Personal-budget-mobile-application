@@ -29,9 +29,8 @@
 			<button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbarCollapse">
 				<span class="navbar-toggler-icon "></span>
 			</button>
-			
+		
 			<div class="collapse navbar-collapse" id="navbarCollapse">
-				
 				<ul class="navbar-nav mx-auto ">
 					<li class="nac-item">
 						<a href="#" class="nav-link">Strona Główna</a>
@@ -52,76 +51,106 @@
 						<a href="#" class="nav-link">Wyloguj</a>
 					</li>
 				</ul>
-				
 			</div>
 			
 		</div>
 	</nav>
   
   
-	<div class="container">
+	<div class="container mt-3">
+	
 		<div class="row">
-			<div class="col-md-4 offset-md-4  col-8 offset-2  text-center mt-5" id="logowanie">
-				<header>
-					<h2 class="p-3">Nowy przychód</h2>
-				</header>
-				<form id="form">
-			
-					<div class="input-group form-group">
-						<div>
-							<span class="input-group-text"><strong><i class="fas fa-coins"></i></strong></span>
-						</div>
-						<input class="form-control" type="number" placeholder="Kwota" step="0.01" min="0">
-					</div>
-					
-					<div class="input-group form-group">
+			<div class="col-lg-3 offset-lg-7 col-md-4 offset-md-6 col-8 offset-2">
+				<div class="input-group form-group">
 						<div>
 							<span class="input-group-text"><strong><i class="far fa-calendar-alt"></i></strong></span>
 						</div>
-						<input class="form-control" type="date" placeholder="Adres email" min="2000-01-01">
-					</div>
-					
-					<div class="input-group form-group">
-						<div>
-							<span class="input-group-text"><strong><i class="fas fa-tag"></i></strong></span>
-						</div>
-						<select class="form-control" name="category">
-							<option value="g" selected>Wynagrodzenie</option>
-							<option value="kd" >Odsetki bankowe</option>
-							<option value="kk">Sprzedaż na allegro</option>
-							<option value="kk">Inne</option>
+						<select class="form-control" name="periodOfTime">
+							<option value="" disabled selected hidden>Okres czasu</option>
+							<option value="bm">Bieżacy miesiac</option>
+							<option value="pm">Poprzedni miesiąc</option>
+							<option value="br">Bieżacy rok</option>
+							<option value="nie">Niestandardowy</option>
 						</select>
 					</div>
-					
-					<div class="input-group form-group">
-						<div>
-							<span class="input-group-text"><strong><i class="far fa-comment"></i></strong></span>
-						</div>
-						<input class="form-control" type="text" placeholder="Komentarz">
-					</div>
-					
-					<div class="row">
-						<div class="col-md-6">
-							<div class="form-group"> 
-								<button class="btn btn-success btn-inline-block">
-									<i class="fas fa-plus"></i> Dodaj 
-								</button>
-							</div>
-						</div>
-						
-						<div class="col-md-6">
-							<div class="form-group"> 
-								<button class="btn btn-danger btn-inline-block">
-									<i class="fas fa-times"></i> Anuluj
-								</button>
-							</div>
-						</div>
-					</div>
-				
-				</form>
 			</div>
-			
 		</div>
+		
+		<header class="text-center">
+			<h1 class="display-4"><strong>BILANS</strong></h1>
+		<header>
+		
+		<div class="row">
+		
+			<div id="incomes" class="col-lg-6">
+				<h2 class="text-center py-2">Przychody <i class="fas fa-plus"></i></h2>
+				<table class="table table-success table-bordered">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Data</th>
+							<th>Kwota</th>
+							<th>Kategoria</th>
+							<th>Komentarz</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>2019-10-02</td>
+							<td>1000</td>
+							<td>Jedzenie</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>2019-10-04</td>
+							<td>1234.78</td>
+							<td>Ubrania</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div id="expenses" class="col-lg-6">
+				<h2 class="text-center py-2">Wydatki <i class="fas fa-minus"></i></h2>
+				<table class="table table-warning table-bordered">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Data</th>
+							<th>Kwota</th>
+							<th>Kategoria</th>
+							<th>Komentarz</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>2019-10-02</td>
+							<td>4000.00</td>
+							<td>Wypłata</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>2019-10-04</td>
+							<td>530.20</td>
+							<td>Sprzedaż Allegro</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+		
+		<div class="mt-4">
+			<h3>Bilans za wybrany okres: </h3>
+			<p class="lead">Dobrze ci idzie z finansami - trzymaj tak dalej!</p>
+		</div>
+		
 	</div>
 	
   <script
