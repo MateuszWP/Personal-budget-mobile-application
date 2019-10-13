@@ -5,6 +5,8 @@ body{
 .logo{
 	min-height: 80px;
 	background-color: #333;
+	color: white;
+	text-align: center;
 }
 
 #logowanie{
