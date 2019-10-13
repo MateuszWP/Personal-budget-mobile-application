@@ -65,17 +65,53 @@
 						<div>
 							<span class="input-group-text"><strong><i class="far fa-calendar-alt"></i></strong></span>
 						</div>
-						<select class="form-control" name="periodOfTime">
+						<select class="form-control" name="periodOfTime" id="selectDate">
 							<option value="" disabled selected hidden>Okres czasu</option>
 							<option value="bm">Bieżacy miesiac</option>
 							<option value="pm">Poprzedni miesiąc</option>
 							<option value="br">Bieżacy rok</option>
-							<option value="nie">Niestandardowy</option>
+							<option value="niestandardowy">Niestandardowy</option>
 						</select>
 					</div>
 			</div>
 		</div>
 		
+		<!--MODAL -->
+		<div class="modal" id="customDate">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			
+			  <div class="modal-header">
+				<h5 class="modal-title">Wybierz zakres czasu</h5>
+				<button class="close" data-dismiss="modal">&times;</button>
+			  </div>
+			  
+			  <div class="modal-body">
+				<form>
+				
+				  <div class="form-group">
+					<label for="date">Od</label>
+					<input class="form-control" type="date" min="2000-01-01">
+				  </div>
+				  
+				  <div class="form-group">
+					<label for="date">Do</label>
+					<input class="form-control" type="date" min="2000-01-01">
+				  </div>
+				  
+				</form>
+			  </div>
+			  
+			  <div class="modal-footer">
+				<button type="submit" class="btn btn-primary" data-dismiss="modal">Akceptuj</button>
+			  </div>
+			  
+			</div>
+		  </div>
+		</div>
+		
+		
+		<!-- BILANS-->
 		<header class="text-center">
 			<h1 class="display-4"><strong>BILANS</strong></h1>
 		<header>
@@ -163,6 +199,15 @@
   <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
+	
+	<!-- wywołanie modala -->
+	$("#selectDate").on("change", function () {        
+		$modal = $('#customDate');
+		if($(this).val() === 'niestandardowy'){
+			$modal.modal('show');
+		}
+	});
+	
   </script>
 </body>
 
