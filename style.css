@@ -41,3 +41,9 @@ nav a:hover {
 #expenses {
 	background-color: #f2be11;
 }
+
+@media (max-width: 991px) {
+	#expenses {
+		margin-top: 10px;
+	}
+}
