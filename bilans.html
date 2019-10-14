@@ -20,7 +20,7 @@
 <body>
 	<div class="logo py-2">
 		<h1><i class="fas fa-balance-scale"></i> Budżet osobisty</h1>
-		<samll>Zadbaj o balans swoich przychodów i wydatków</small>
+		<small>Zadbaj o balans swoich przychodów i wydatków</small>
 	</div>
   
 	<nav class="navbar navbar-expand-md  navbar-light py-2" >
@@ -90,12 +90,16 @@
 				<form>
 				
 				  <div class="form-group">
-					<label for="date">Od</label>
+					<label>
+						Od: <input name="date">
+					</label>
 					<input class="form-control" type="date" min="2000-01-01">
 				  </div>
 				  
 				  <div class="form-group">
-					<label for="date">Do</label>
+					<label>
+						Do: <input name="date">
+					</label>
 					<input class="form-control" type="date" min="2000-01-01">
 				  </div>
 				  
@@ -114,7 +118,7 @@
 		<!-- BILANS-->
 		<header class="text-center">
 			<h1 class="display-4"><strong>BILANS</strong></h1>
-		<header>
+		</header>
 		
 		<div class="row">
 		
@@ -182,7 +186,7 @@
 
 		</div>
 		
-		<div class="mt-4">
+		<div class="text-center py-2 mt-4">
 			<h3>Bilans za wybrany okres: </h3>
 			<p class="lead">Dobrze ci idzie z finansami - trzymaj tak dalej!</p>
 		</div>
