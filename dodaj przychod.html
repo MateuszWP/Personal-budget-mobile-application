@@ -20,7 +20,7 @@
 <body>
 	<div class="logo py-2">
 		<h1><i class="fas fa-balance-scale"></i> Budżet osobisty</h1>
-		<samll>Zadbaj o balans swoich przychodów i wydatków</small>
+		<small>Zadbaj o balans swoich przychodów i wydatków</small>
 	</div>
   
 	<nav class="navbar navbar-expand-md  navbar-light py-2" >
@@ -78,7 +78,7 @@
 						<div>
 							<span class="input-group-text"><strong><i class="far fa-calendar-alt"></i></strong></span>
 						</div>
-						<input class="form-control" type="date" placeholder="Adres email" min="2000-01-01">
+						<input class="form-control" type="date" data-polyfill="all" min="2000-01-01">
 					</div>
 					
 					<div class="input-group form-group">
@@ -124,12 +124,11 @@
 		</div>
 	</div>
 	
-  <script
-  src="http://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/better-dateinput-polyfill/3.2.7/better-dateinput-polyfill.min.js" integrity="sha256-2yAfYAqEL4bs6xU4JyRgRLKZS2JJCM4/tYW2UmX6/q4=" crossorigin="anonymous"></script>
 
   <script>
     // Get the current year for the copyright
